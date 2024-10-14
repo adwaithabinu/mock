@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator - Basic Operations</title>
+    <style>
+        body {
+            background-color: #F0F8FF; /* Unique background color */
+        }
+
+        #calculator {
+            background-color: #FFFFE0;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        button {
+            width: 30%;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <h2>Calculator - Basic Operations</h2>
+        <h3>Adwaitha Binu</h3>
+        <input type="text" id="num1" placeholder="Enter number 1">
+        <input type="text" id="num2" placeholder="Enter number 2">
+        <br>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <br>
+        <p>Result: <span id="result">0</span></p>
+    </div>
+
+    <script>
+        function add() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").textContent = num1 + num2;
+        }
+
+        function subtract() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").textContent = num1 - num2;
+        }
+
+        function multiply() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").textContent = num1 * num2;
+        }
+    </script>
+</body>
+</html>

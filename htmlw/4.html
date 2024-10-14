@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Update</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F4E3C1;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: #333;
+        }
+
+        form {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-size: 18px;
+            color: #444;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] {
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        select {
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Salary Update</h1>
+    <form method="get" action="employee.php">
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" name="employee_id" id="employee_id"><br><br>
+
+        <label for="new_salary">New Salary:</label>
+        <input type="text" name="new_salary" id="new_salary"><br><br>
+
+        <label for="action">Action:</label>
+        <select name="action" id="action">
+            <option value="increment">Increment</option>
+            <option value="decrement">Decrement</option>
+        </select><br><br>
+
+        <input type="submit" value="Update Salary">
+    </form>
+</body>
+</html>
